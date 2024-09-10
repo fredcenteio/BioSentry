@@ -1,0 +1,6 @@
+{{{
+	"Cmd":"Register_finger",
+	"name":Input1.text,
+	"status":Input1Copy.text
+	
+	}}}

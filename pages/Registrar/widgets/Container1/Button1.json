@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 26,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "iconName": "new-person",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "3qezjgsr8d",
+  "leftColumn": 22,
+  "minWidth": 120,
+  "mobileBottomRow": 26,
+  "mobileLeftColumn": 24,
+  "mobileRightColumn": 40,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onClick": "{{Registrar_finger.run({\n\t\"Cmd\":\"Register_finger\",\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t});}}",
+  "parentColumnSpace": 5.186767578125,
+  "parentId": "ikfgqbhyrj",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 45,
+  "text": "Register",
+  "topRow": 22,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "s6whbym6k3",
+  "widgetName": "Button1"
+}
