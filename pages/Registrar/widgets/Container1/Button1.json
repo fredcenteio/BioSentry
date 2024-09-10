@@ -3,20 +3,16 @@
   "borderRadius": "1.5rem",
   "bottomRow": 26,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#7f1d1d",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": true,
-  "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    }
-  ],
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconAlign": "left",
+  "iconAlign": "right",
   "iconName": "new-person",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
