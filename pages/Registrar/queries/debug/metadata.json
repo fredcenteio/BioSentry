@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66dc533ebd006624fdcc77b2_1f0dff1d-6a19-41ff-8a64-e4172dddc305",
-  "id": "Registrar_Registrar_finger",
+  "gitSyncId": "66dc533ebd006624fdcc77b2_f66d0a85-afe0-49a2-8c42-8fd2338b24db",
+  "id": "Registrar_debug",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{{\n\t\"Cmd\":\"Register_finger\",\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t}}}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/receive-from-appsmith_biosentry",
+      "path": "/send_resp2Appsmith_biosentry",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -40,13 +40,9 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": false,
-    "name": "Registrar_finger",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "name": "debug",
     "pageId": "Registrar",
     "userSetOnLoad": false
   }

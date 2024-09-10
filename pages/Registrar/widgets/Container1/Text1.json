@@ -13,6 +13,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -32,8 +35,8 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "originalBottomRow": 50,
-  "originalTopRow": 30,
+  "originalBottomRow": 49,
+  "originalTopRow": 29,
   "overflow": "NONE",
   "parentColumnSpace": 14.078125,
   "parentId": "ikfgqbhyrj",
@@ -42,7 +45,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "",
+  "text": "{{debug.data}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 29,
