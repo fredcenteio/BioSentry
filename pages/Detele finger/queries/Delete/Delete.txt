@@ -1,0 +1,4 @@
+{{{
+	"Cmd":"Delete_finger",
+	"name":Input1.text,
+	}}}

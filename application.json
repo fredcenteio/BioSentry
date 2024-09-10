@@ -27,6 +27,10 @@
     {
       "id": "Registrar",
       "isDefault": false
+    },
+    {
+      "id": "Detele finger",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
