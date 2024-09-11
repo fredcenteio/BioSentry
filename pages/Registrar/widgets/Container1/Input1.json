@@ -4,29 +4,45 @@
   "autoFocus": false,
   "borderRadius": "1.5rem",
   "bottomRow": 14,
-  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
   "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onSubmit"
+    },
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    }
+  ],
   "iconAlign": "left",
+  "iconName": "people",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
+  "isSpellCheck": true,
   "isVisible": true,
   "key": "ahdamz4rmk",
   "label": "Name:",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelStyle": "BOLD",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 2,
+  "maxChars": "255",
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -35,6 +51,9 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onFocus": "{{Button_des.checkInputLength();}}",
+  "onSubmit": "",
+  "onTextChanged": "{{Button_des.checkInputLength();}}",
   "parentColumnSpace": 14.078125,
   "parentId": "ikfgqbhyrj",
   "parentRowSpace": 10,
@@ -45,6 +64,7 @@
   "showStepArrows": false,
   "topRow": 7,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{Input1.text.length>0}}",
   "version": 2,
   "widgetId": "or7bhhm9hi",
   "widgetName": "Input1"

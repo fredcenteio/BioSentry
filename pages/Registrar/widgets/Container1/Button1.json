@@ -2,11 +2,17 @@
   "animateLoading": true,
   "borderRadius": "1.5rem",
   "bottomRow": 26,
+  "bottomRowBeforeCollapse": 26,
   "boxShadow": "none",
   "buttonColor": "#7f1d1d",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
+  "disabledWhenInvalid": "true",
   "dynamicBindingPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "disabledWhenInvalid"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -27,6 +33,8 @@
   "mobileTopRow": 22,
   "needsErrorInfo": false,
   "onClick": "{{Registrar_finger.run({\n\t\"Cmd\":\"Register_finger\",\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t});}}",
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
   "parentColumnSpace": 5.186767578125,
   "parentId": "ikfgqbhyrj",
   "parentRowSpace": 10,
@@ -37,7 +45,9 @@
   "responsiveBehavior": "hug",
   "rightColumn": 45,
   "text": "Register",
+  "tooltip": "",
   "topRow": 22,
+  "topRowBeforeCollapse": 22,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "s6whbym6k3",

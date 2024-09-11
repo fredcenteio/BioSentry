@@ -25,6 +25,7 @@
   "key": "q3ou8mq3d6",
   "labelAlignment": "left",
   "labelPosition": "Top",
+  "labelStyle": "BOLD",
   "labelText": "Access Control Device",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
