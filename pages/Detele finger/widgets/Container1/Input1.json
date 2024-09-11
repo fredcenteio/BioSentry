@@ -12,7 +12,14 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onFocus"
+    },
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -35,6 +42,8 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onFocus": "{{buton_des.checkInputLength();}}",
+  "onTextChanged": "{{buton_des.checkInputLength();}}",
   "parentColumnSpace": 14.078125,
   "parentId": "qe3ii9xwta",
   "parentRowSpace": 10,

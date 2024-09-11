@@ -3,14 +3,10 @@
   "borderRadius": "1.5rem",
   "bottomRow": 25,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonColor": "#7f1d1d",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    }
-  ],
+  "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -21,7 +17,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "3qezjgsr8d",
-  "leftColumn": 21,
+  "leftColumn": 15,
   "minWidth": 120,
   "mobileBottomRow": 25,
   "mobileLeftColumn": 24,
@@ -37,7 +33,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 46,
+  "rightColumn": 45,
   "text": "Delete all finger",
   "topRow": 21,
   "type": "BUTTON_WIDGET",
