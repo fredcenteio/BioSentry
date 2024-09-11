@@ -12,10 +12,17 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    }
+  ],
   "iconAlign": "left",
   "iconName": "circle-arrow-right",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
@@ -36,6 +43,8 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onFocus": "{{Button_des.checkInputLength();}}",
+  "onTextChanged": "{{Button_des.checkInputLength();}}",
   "parentColumnSpace": 14.078125,
   "parentId": "ikfgqbhyrj",
   "parentRowSpace": 10,
