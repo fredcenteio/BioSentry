@@ -17,7 +17,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "iconName": "circle-arrow-right",
+  "iconName": "envelope",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
