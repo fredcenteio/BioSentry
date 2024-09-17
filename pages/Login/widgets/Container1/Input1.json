@@ -2,16 +2,13 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "autoFocus": false,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 36,
-  "boxShadow": "none",
+  "borderRadius": "1.5rem",
+  "bottomRow": 30,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -39,10 +36,10 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "originalBottomRow": 39,
-  "originalTopRow": 32,
+  "originalBottomRow": 30,
+  "originalTopRow": 23,
   "parentColumnSpace": 6.84375,
-  "parentId": "0",
+  "parentId": "zigp91cq1s",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
@@ -50,7 +47,7 @@
   "rightColumn": 60,
   "shouldAllowAutofill": true,
   "showStepArrows": false,
-  "topRow": 29,
+  "topRow": 23,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "b24efgmq7c",

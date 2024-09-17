@@ -30,7 +30,7 @@
   "icon": "server-line",
   "pages": [
     {
-      "id": "Home",
+      "id": "Login",
       "isDefault": true
     },
     {
@@ -39,6 +39,10 @@
     },
     {
       "id": "Detele finger",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
       "isDefault": false
     }
   ],
