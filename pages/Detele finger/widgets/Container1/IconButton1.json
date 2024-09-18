@@ -6,7 +6,11 @@
   "buttonColor": "#7f1d1d",
   "buttonVariant": "SECONDARY",
   "dynamicBindingPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconName": "log-out",
   "isDisabled": false,
   "isLoading": false,
@@ -19,6 +23,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onClick": "{{logout.handleLogout();}}",
   "parentColumnSpace": 5.4619140625,
   "parentId": "qe3ii9xwta",
   "parentRowSpace": 10,
