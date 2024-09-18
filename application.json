@@ -31,7 +31,7 @@
   "pages": [
     {
       "id": "Login",
-      "isDefault": true
+      "isDefault": false
     },
     {
       "id": "Registrar",
@@ -43,7 +43,7 @@
     },
     {
       "id": "Home",
-      "isDefault": false
+      "isDefault": true
     }
   ],
   "unpublishedAppLayout": {
