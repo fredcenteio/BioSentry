@@ -2,10 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 50,
-  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "bottomRow": 42,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "canFreezeColumn": true,
   "childStylesheet": {
     "button": {
@@ -39,7 +39,11 @@
     "Device_id"
   ],
   "columnUpdatedAt": 1726675824015,
-  "columnWidthMap": {},
+  "columnWidthMap": {
+    "id": 60,
+    "logg_info": 110,
+    "status": 87
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
@@ -49,12 +53,6 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
-    },
-    {
-      "key": "boxShadow"
     },
     {
       "key": "tableData"
@@ -86,7 +84,7 @@
   "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
-  "horizontalAlignment": "LEFT",
+  "horizontalAlignment": "CENTER",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
@@ -107,7 +105,7 @@
   "originalBottomRow": 50,
   "originalTopRow": 23,
   "parentColumnSpace": 6.84375,
-  "parentId": "0",
+  "parentId": "zd0rtwt8pe",
   "parentRowSpace": 10,
   "primaryColumns": {
     "Device_id": {
@@ -120,7 +118,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "Device_id",
       "index": 1,
       "isCellEditable": false,
@@ -151,7 +149,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "id",
       "index": 2,
       "isCellEditable": false,
@@ -182,7 +180,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "logg_info",
       "index": 3,
       "isCellEditable": false,
@@ -213,7 +211,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "nome",
       "index": 4,
       "isCellEditable": false,
@@ -244,7 +242,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "status",
       "index": 5,
       "isCellEditable": false,
@@ -275,7 +273,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "time",
       "index": 0,
       "isCellEditable": false,
@@ -303,7 +301,7 @@
   "searchKey": "",
   "tableData": "{{influx.data}}",
   "textSize": "0.875rem",
-  "topRow": 23,
+  "topRow": 8,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
