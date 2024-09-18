@@ -1,18 +1,14 @@
 export default {
   async handleLogin() {
-    const email = Input1.text;
-    const password = Input2.text;
+   if (Query1.data.length > 0) {
+  storeValue('user', Query1.data[0]);  // Armazena o usuário logado
+  showAlert('Login bem-sucedido!', 'success');
+  navigateTo('Home');  // Redireciona para a página principal
+	} else {
+  showAlert('Credenciais inválidas', 'error');
+	}
 
-    const response = await loginApi.run({
-      email: email,
-      password: password
-    });
-
-    if (response.success) {
-      showAlert('Login bem-sucedido!', 'success');
-      navigateTo('PáginaPrincipal');
-    } else {
-      showAlert('Email ou senha incorretos.', 'error');
-    }
   }
+	
+	
 };

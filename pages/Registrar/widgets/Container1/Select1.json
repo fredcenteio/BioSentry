@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "1.5rem",
-  "bottomRow": 6,
+  "bottomRow": 14,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "defaultOptionValue": "E11 S300",
   "dynamicBindingPathList": [
@@ -49,7 +49,7 @@
   "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"E11 S300\",\n    \"code\": \"BSE11S300T\"\n  },\n  {\n    \"name\": \"E17\",\n    \"code\": \"BSE17T\"\n  },\n  {\n    \"name\": \"E16\",\n    \"code\": \"BSE16T\"\n  },\n\t {\n    \"name\": \"E15\",\n    \"code\": \"BSE15T\"\n  }\n]",
-  "topRow": 0,
+  "topRow": 8,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "pflp6xl0y7",

@@ -18,16 +18,25 @@
         "apiContentType": "none"
       },
       "headers": [],
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/macros/s/AKfycbykr-0UH4TV3N4GX4zF9WmvJ0GSRZ9ZhzswpBGYYdShqU2Av6kCCxSGEmNfDioxkE6LkA/exec",
+      "path": "/macros/s/AKfycbyOZWIA4znS3nuJwqeN2Lbp7tAU_eo3JxvRGbdgtTicWn13DLBHGz3gSjzL55gWkv28Ww/exec",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "email",
+          "value": ""
+        },
+        {
+          "key": "password",
+          "value": ""
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
