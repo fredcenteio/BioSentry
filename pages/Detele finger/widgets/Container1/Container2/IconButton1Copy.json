@@ -16,7 +16,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "71ifq8og48",
-  "leftColumn": 55,
+  "leftColumn": 56,
   "minWidth": 50,
   "mobileBottomRow": 4,
   "mobileLeftColumn": 54,
@@ -27,14 +27,14 @@
   "originalBottomRow": 16,
   "originalTopRow": 12,
   "parentColumnSpace": 5.4619140625,
-  "parentId": "zd0rtwt8pe",
+  "parentId": "r0vx4wfvhv",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 59,
+  "rightColumn": 62,
   "topRow": 0,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "ai3o9b549d",
-  "widgetName": "IconButton1"
+  "widgetId": "0p4x4fxbkv",
+  "widgetName": "IconButton1Copy"
 }
