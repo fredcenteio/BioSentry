@@ -19,6 +19,9 @@
     },
     {
       "key": "groupButtons.groupButton2.menuItems.menuItemdoqxmgdxd2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
     }
   ],
   "groupButtons": {
@@ -32,6 +35,7 @@
       "isVisible": true,
       "label": "",
       "menuItems": {},
+      "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
     },
