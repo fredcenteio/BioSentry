@@ -12,9 +12,6 @@
   "dynamicBindingPathList": [],
   "dynamicTriggerPathList": [
     {
-      "key": "groupButtons.groupButton2.menuItems.menuItemldthi9mzqn.onClick"
-    },
-    {
       "key": "groupButtons.groupButton2.menuItems.menuItemnv3n0ypvbe.onClick"
     },
     {
@@ -51,25 +48,16 @@
       "menuItems": {
         "menuItemdoqxmgdxd2": {
           "id": "menuItemdoqxmgdxd2",
-          "index": 2,
+          "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "Delete",
           "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');}}",
           "widgetId": "idir8qdon8"
         },
-        "menuItemldthi9mzqn": {
-          "id": "menuItemldthi9mzqn",
-          "index": 0,
-          "isDisabled": false,
-          "isVisible": true,
-          "label": "Home",
-          "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
-          "widgetId": "kowgxtmjlk"
-        },
         "menuItemnv3n0ypvbe": {
           "id": "menuItemnv3n0ypvbe",
-          "index": 1,
+          "index": 0,
           "isDisabled": false,
           "isVisible": true,
           "label": "Registrar",

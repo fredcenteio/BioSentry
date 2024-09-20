@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 11,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -11,15 +11,12 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "0.875rem",
+  "fontSize": "1rem",
   "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": true,
@@ -41,11 +38,11 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 42,
+  "rightColumn": 36,
   "shouldTruncate": false,
-  "text": "Hello {{appsmith.user.email}}",
+  "text": "Entradas e saidas da Sala",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
+  "textColor": "#18181b",
   "topRow": 7,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
