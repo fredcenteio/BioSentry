@@ -23,7 +23,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{logout.handleLogout();}}",
+  "onClick": "{{Logout.handleLogout();}}",
   "originalBottomRow": 16,
   "originalTopRow": 12,
   "parentColumnSpace": 5.4619140625,
