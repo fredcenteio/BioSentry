@@ -40,7 +40,7 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "influx_registed_fingers",
     "pageId": "Home",
     "userSetOnLoad": false
