@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{{\n\t\"Cmd\":\"Register_finger\",\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t}}}",
+      "body": "{{{\n\t\"Cmd\":\"Register_finger_\"+ Select1.selectedOptionValue,\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t}}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

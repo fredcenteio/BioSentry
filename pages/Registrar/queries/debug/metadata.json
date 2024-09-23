@@ -21,7 +21,7 @@
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/send_resp2Appsmith_biosentry",
+      "path": "/send-to-appsmith_biosentry_d",
       "pluginSpecifiedTemplates": [
         {
           "value": true

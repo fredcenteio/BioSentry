@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{{\n\t\"Cmd\":\"Delete_all_fingers\"\n\t}}}",
+      "body": "{{{\n\t\"Cmd\":\"Delete_all_fingers_\"+ Select1.selectedOptionValue\n\t}}}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

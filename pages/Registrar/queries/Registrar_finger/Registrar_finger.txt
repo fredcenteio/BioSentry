@@ -1,5 +1,5 @@
 {{{
-	"Cmd":"Register_finger",
+	"Cmd":"Register_finger_"+ Select1.selectedOptionValue,
 	"name":Input1.text,
 	"status":Input1Copy.text
 	

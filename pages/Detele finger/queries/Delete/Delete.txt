@@ -1,4 +1,4 @@
 {{{
-	"Cmd":"Delete_finger",
+	"Cmd":"Delete_finger_"+ Select1.selectedOptionValue,
 	"name":Input1.text,
 	}}}

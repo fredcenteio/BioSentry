@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66dc533ebd006624fdcc77b2_21afa0ea-bf45-44ae-85bf-76d698284a7c",
-  "id": "Detele finger_Delete",
+  "gitSyncId": "66dc533ebd006624fdcc77b2_839c3502-1b3c-4c67-aee1-4190d7bc2b6c",
+  "id": "Home_influx_registed_fingers",
   "pluginId": "restapi-plugin",
   "pluginType": "API",
   "unpublishedAction": {
@@ -11,17 +11,17 @@
           "value": "application/json"
         }
       ],
-      "body": "{{{\n\t\"Cmd\":\"Delete_finger_\"+ Select1.selectedOptionValue,\n\t\"name\":Input1.text,\n\t}}}",
+      "body": "",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
-        "apiContentType": "application/json"
+        "apiContentType": "none"
       },
       "headers": [],
       "httpMethod": "POST",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/receive-from-appsmith_biosentry",
+      "path": "/send-to-appsmith-biosentry_registed",
       "pluginSpecifiedTemplates": [
         {
           "value": true
@@ -39,14 +39,10 @@
       "name": "DEFAULT_REST_DATASOURCE",
       "pluginId": "restapi-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "Delete",
-    "pageId": "Detele finger",
+    "name": "influx_registed_fingers",
+    "pageId": "Home",
     "userSetOnLoad": false
   }
 }
