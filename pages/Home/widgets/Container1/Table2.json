@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 40,
+  "bottomRow": 41,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -45,6 +45,7 @@
     "status_": 80,
     "time": 102
   },
+  "compactMode": "SHORT",
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
@@ -54,9 +55,6 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
-    },
-    {
-      "key": "borderRadius"
     },
     {
       "key": "boxShadow"
@@ -88,7 +86,7 @@
   "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
-  "horizontalAlignment": "LEFT",
+  "horizontalAlignment": "CENTER",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
   "isSortable": true,
@@ -106,6 +104,8 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 52,
   "needsErrorInfo": false,
+  "originalBottomRow": 42,
+  "originalTopRow": 13,
   "parentColumnSpace": 6.53125,
   "parentId": "zd0rtwt8pe",
   "parentRowSpace": 10,
@@ -123,7 +123,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "device_id",
       "index": 1,
       "isCellEditable": false,
@@ -157,7 +157,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "id",
       "index": 2,
       "isCellEditable": false,
@@ -191,7 +191,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "name",
       "index": 3,
       "isCellEditable": false,
@@ -225,7 +225,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "status_",
       "index": 4,
       "isCellEditable": false,
@@ -259,7 +259,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "LEFT",
+      "horizontalAlignment": "CENTER",
       "id": "time",
       "index": 0,
       "isCellEditable": false,
@@ -288,7 +288,7 @@
   "searchKey": "",
   "tableData": "{{influx_registed_fingers.data}}",
   "textSize": "0.875rem",
-  "topRow": 11,
+  "topRow": 12,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
