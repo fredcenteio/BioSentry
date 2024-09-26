@@ -39,7 +39,7 @@
     "device_id",
     "status_"
   ],
-  "columnUpdatedAt": 1726850480972,
+  "columnUpdatedAt": 1727172674506,
   "columnWidthMap": {
     "Device_id": 106,
     "id": 60,
@@ -169,7 +169,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id",
       "notation": "standard",
       "originalId": "id",
