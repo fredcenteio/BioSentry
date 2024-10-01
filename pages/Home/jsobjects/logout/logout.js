@@ -5,7 +5,7 @@ export default {
   },
   startLogoutTimer() {
     // Define o tempo em milissegundos (por exemplo, 5 minutos)
-    const logoutTime = 1 * 60 * 1000;
+    const logoutTime = 5 * 60 * 1000;
 
     setTimeout(() => {
       this.handleLogout();

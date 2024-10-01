@@ -4,7 +4,7 @@
   "borderColor": "#ffffff",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 101,
+  "bottomRow": 96,
   "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
   "canFreezeColumn": true,
   "cellBackground": "#ffffff",
@@ -34,12 +34,12 @@
   "columnOrder": [
     "name",
     "id",
-    "logg_info",
     "time",
     "device_id",
-    "status_"
+    "status_",
+    "logg_info"
   ],
-  "columnUpdatedAt": 1727172674506,
+  "columnUpdatedAt": 1727783164950,
   "columnWidthMap": {
     "Device_id": 106,
     "id": 60,
@@ -69,9 +69,6 @@
       "key": "primaryColumns.id.computedValue"
     },
     {
-      "key": "primaryColumns.logg_info.computedValue"
-    },
-    {
       "key": "primaryColumns.device_id.computedValue"
     },
     {
@@ -79,6 +76,9 @@
     },
     {
       "key": "primaryColumns.status_.computedValue"
+    },
+    {
+      "key": "primaryColumns.logg_info.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -192,6 +192,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "fontStyle": "",
       "horizontalAlignment": "CENTER",
       "id": "logg_info",
       "index": 3,
@@ -203,7 +204,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Logg_info",
+      "label": "logg_info",
       "notation": "standard",
       "originalId": "logg_info",
       "sticky": "",
@@ -226,7 +227,7 @@
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
-      "horizontalAlignment": "CENTER",
+      "horizontalAlignment": "LEFT",
       "id": "name",
       "index": 5,
       "isCellEditable": false,
@@ -323,7 +324,7 @@
   "tableData": "{{influx.data}}",
   "textColor": "#18181b",
   "textSize": "0.875rem",
-  "topRow": 52,
+  "topRow": 47,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "variant": "VARIANT3",
