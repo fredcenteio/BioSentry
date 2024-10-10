@@ -19,6 +19,9 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemrj0itljy3t.onClick"
     }
   ],
   "groupButtons": {
@@ -63,6 +66,15 @@
           "label": "Registrar",
           "onClick": "{{navigateTo('Registrar', {}, 'SAME_WINDOW');}}",
           "widgetId": "xndmefa0wx"
+        },
+        "menuItemrj0itljy3t": {
+          "id": "menuItemrj0itljy3t",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Open Door",
+          "onClick": "{{navigateTo('Open Door', {}, 'SAME_WINDOW');}}",
+          "widgetId": "tq5wnq0ped"
         }
       },
       "placement": "CENTER",

@@ -15,13 +15,13 @@
       "key": "groupButtons.groupButton2.menuItems.menuItemldthi9mzqn.onClick"
     },
     {
-      "key": "groupButtons.groupButton2.menuItems.menuItemnv3n0ypvbe.onClick"
-    },
-    {
       "key": "groupButtons.groupButton2.menuItems.menuItemdoqxmgdxd2.onClick"
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemgkafll8tq3.onClick"
     }
   ],
   "groupButtons": {
@@ -51,12 +51,21 @@
       "menuItems": {
         "menuItemdoqxmgdxd2": {
           "id": "menuItemdoqxmgdxd2",
-          "index": 2,
+          "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "Delete",
           "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');}}",
           "widgetId": "idir8qdon8"
+        },
+        "menuItemgkafll8tq3": {
+          "id": "menuItemgkafll8tq3",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Open Door",
+          "onClick": "{{navigateTo('Open Door', {}, 'SAME_WINDOW');}}",
+          "widgetId": "9nn9ym4nh2"
         },
         "menuItemldthi9mzqn": {
           "id": "menuItemldthi9mzqn",
@@ -66,15 +75,6 @@
           "label": "Home",
           "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
           "widgetId": "kowgxtmjlk"
-        },
-        "menuItemnv3n0ypvbe": {
-          "id": "menuItemnv3n0ypvbe",
-          "index": 1,
-          "isDisabled": false,
-          "isVisible": true,
-          "label": "Registrar",
-          "onClick": "{{navigateTo('Registrar', {}, 'SAME_WINDOW');}}",
-          "widgetId": "xndmefa0wx"
         }
       },
       "placement": "CENTER",

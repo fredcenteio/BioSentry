@@ -35,11 +35,11 @@
     "name",
     "id",
     "time",
+    "logg_info",
     "device_id",
-    "status_",
-    "logg_info"
+    "status_"
   ],
-  "columnUpdatedAt": 1727783164950,
+  "columnUpdatedAt": 1727783518678,
   "columnWidthMap": {
     "Device_id": 106,
     "id": 60,
@@ -271,7 +271,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "status_",
       "notation": "standard",
       "originalId": "status_",

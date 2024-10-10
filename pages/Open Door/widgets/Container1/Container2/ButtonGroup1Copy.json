@@ -18,10 +18,10 @@
       "key": "groupButtons.groupButton2.menuItems.menuItemnv3n0ypvbe.onClick"
     },
     {
-      "key": "groupButtons.groupButton1.onClick"
+      "key": "groupButtons.groupButton2.menuItems.menuItemdoqxmgdxd2.onClick"
     },
     {
-      "key": "groupButtons.groupButton2.menuItems.menuItem36y659s2ip.onClick"
+      "key": "groupButtons.groupButton1.onClick"
     }
   ],
   "groupButtons": {
@@ -49,14 +49,14 @@
       "isVisible": true,
       "label": "Menu",
       "menuItems": {
-        "menuItem36y659s2ip": {
-          "id": "menuItem36y659s2ip",
+        "menuItemdoqxmgdxd2": {
+          "id": "menuItemdoqxmgdxd2",
           "index": 2,
           "isDisabled": false,
           "isVisible": true,
-          "label": "Open Door",
-          "onClick": "{{navigateTo('Open Door', {}, 'SAME_WINDOW');}}",
-          "widgetId": "t8pyg3w8q5"
+          "label": "Delete",
+          "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');}}",
+          "widgetId": "idir8qdon8"
         },
         "menuItemldthi9mzqn": {
           "id": "menuItemldthi9mzqn",
@@ -96,7 +96,7 @@
   "originalBottomRow": 30,
   "originalTopRow": 21,
   "parentColumnSpace": 6.42431640625,
-  "parentId": "r0vx4wfvhv",
+  "parentId": "3u9r7w5i0r",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
@@ -104,6 +104,6 @@
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
-  "widgetId": "3buvab2dk0",
+  "widgetId": "nelmqw1gxc",
   "widgetName": "ButtonGroup1Copy"
 }
