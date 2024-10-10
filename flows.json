@@ -1,0 +1,725 @@
+[
+    {
+        "id": "600e0d5ab71959b7",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aaf63778.981ca8",
+        "type": "tab",
+        "label": "ELEVAR2020",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "585b0bfe535b0c39",
+        "type": "tab",
+        "label": "UniVerde",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3cb90d71da84f143",
+        "type": "tab",
+        "label": "Biosentry",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "61c1d686736b2f08",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "7498502e33ad01cd",
+        "type": "mqtt-broker",
+        "name": "esp32_2_influx",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "1",
+        "birthRetain": "true",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "247f7da5f19194c8",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "elevar2030_ws",
+        "name": "esp32-influx",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://us-east-1-1.aws.cloud2.influxdata.com",
+        "rejectUnauthorized": false
+    },
+    {
+        "id": "37b3ae7e2ca19f70",
+        "type": "influxdb",
+        "hostname": "localhost",
+        "port": "8086",
+        "protocol": "http",
+        "database": "Biosentry",
+        "name": "textFRED",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "2.0",
+        "url": "https://us-east-1-1.aws.cloud2.influxdata.com",
+        "timeout": "",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "1f655d6c84433314",
+        "type": "mqtt-broker",
+        "name": "RSLab broker",
+        "broker": "62.171.180.52",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "313d0c06ddfde3e4",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "Biosentry",
+        "name": "Biosentry_getdata",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "79fd51c5a8c38477",
+        "type": "influxdb",
+        "hostname": "127.0.0.1",
+        "port": "8086",
+        "protocol": "http",
+        "database": "elevar2030_ws",
+        "name": "elevar2030_to_influx1.x",
+        "usetls": false,
+        "tls": "",
+        "influxdbVersion": "1.x",
+        "url": "http://localhost:8086",
+        "timeout": "10",
+        "rejectUnauthorized": true
+    },
+    {
+        "id": "6d2a332f.f1493c",
+        "type": "debug",
+        "z": "aaf63778.981ca8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 390,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e152a7b8.364288",
+        "type": "mqtt in",
+        "z": "aaf63778.981ca8",
+        "name": "wsc",
+        "topic": "wstopic",
+        "qos": "1",
+        "datatype": "json",
+        "broker": "7498502e33ad01cd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 190,
+        "y": 400,
+        "wires": [
+            [
+                "6d2a332f.f1493c",
+                "34ec5cbc.ba0084"
+            ]
+        ]
+    },
+    {
+        "id": "34ec5cbc.ba0084",
+        "type": "function",
+        "z": "aaf63778.981ca8",
+        "name": "weather2influx",
+        "func": "msg.payload=[\n    {\n    measurement: \"weather_data\",\n    fields:{\n        temperatura: msg.payload.TEMP,\n        humidade: msg.payload.HUMID,\n        maregrafo: msg.payload.DIST,\n        pluviometro: msg.payload.PREC,\n        press: msg.payload.PRESS,\n        speedwind: msg.payload.SPEEDW,\n        dirwind: msg.payload.DIR,\n        signal: msg.payload.SIGNAL,\n        vcc_p: msg.payload.VCC_p,\n        vout: msg.payload.Vout,\n        vbat: msg.payload.Vbat,\n       \n    },\n    tags:{\n        location:msg.payload.LOCAT,\n        deviceID:msg.payload.client_id,\n      \n    },\n    timestamp:new Date()\n    \n}];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 440,
+        "wires": [
+            [
+                "2516d790.56b6f8"
+            ]
+        ]
+    },
+    {
+        "id": "2516d790.56b6f8",
+        "type": "influxdb batch",
+        "z": "aaf63778.981ca8",
+        "influxdb": "79fd51c5a8c38477",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "elevar2030_ws",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "ELEVAR TEAM",
+        "bucket": "weather",
+        "x": 650,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "ec32930b3ed09f49",
+        "type": "debug",
+        "z": "585b0bfe535b0c39",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 610,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6def7d44231c3dd9",
+        "type": "mqtt in",
+        "z": "585b0bfe535b0c39",
+        "name": "wsc",
+        "topic": "UniVerde_data",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7498502e33ad01cd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 370,
+        "y": 260,
+        "wires": [
+            [
+                "ec32930b3ed09f49",
+                "253090027fa1d734"
+            ]
+        ]
+    },
+    {
+        "id": "253090027fa1d734",
+        "type": "function",
+        "z": "585b0bfe535b0c39",
+        "name": "Univerder2influx",
+        "func": "msg.payload=[\n    {\n    measurement: \"UniVerde_data\",\n    fields:{\n        temperatura: msg.payload.temperatura,\n        humidade: msg.payload.umidade,\n        rain_sensor: msg.payload.rain_sensor,\n        umidadeSolo: msg.payload.umidadeSolo,\n        flowrate: msg.payload.flowrate,\n        vol: msg.payload.vol,\n        irrigation_status: msg.payload.eletrov_status\n       \n        \n    },\n    id: msg.payload.id,\n    timestamp:new Date()\n    \n}];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 380,
+        "wires": [
+            [
+                "d327a2b9e554ddd0"
+            ]
+        ]
+    },
+    {
+        "id": "d327a2b9e554ddd0",
+        "type": "influxdb batch",
+        "z": "585b0bfe535b0c39",
+        "influxdb": "247f7da5f19194c8",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "elevar2030_ws",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "ELEVAR TEAM",
+        "bucket": "UniVerde",
+        "x": 830,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "861596cbc926bf34",
+        "type": "debug",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "47b04639499ff006",
+        "type": "mqtt in",
+        "z": "3cb90d71da84f143",
+        "name": "Biosentry loggs",
+        "topic": "fingerprint_RESP",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "7498502e33ad01cd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "861596cbc926bf34",
+                "90d154794b899276"
+            ]
+        ]
+    },
+    {
+        "id": "90d154794b899276",
+        "type": "function",
+        "z": "3cb90d71da84f143",
+        "name": "biosentry2influx",
+        "func": "msg.payload.status_ = msg.payload.status_.trim();\nmsg.payload=[\n    {\n    measurement: \"loggs_Biodata\",\n    fields:{\n        name: msg.payload.name,\n        id: msg.payload.id,\n        status_: msg.payload.status_,\n        logg_info: msg.payload.logg_info,\n        \n       \n        \n    },\n    tags:{\n        device_id: msg.payload.device_id,\n        \n    },\n    timestamp: new Date()\n}];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 160,
+        "wires": [
+            [
+                "9df421a52c726e26"
+            ]
+        ]
+    },
+    {
+        "id": "9df421a52c726e26",
+        "type": "influxdb batch",
+        "z": "3cb90d71da84f143",
+        "influxdb": "313d0c06ddfde3e4",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "Biosentry",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "ELEVAR TEAM",
+        "bucket": "UniVerde",
+        "x": 690,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "0f4e61814589cc73",
+        "type": "debug",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 450,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "40fc4208332e8c30",
+        "type": "mqtt in",
+        "z": "3cb90d71da84f143",
+        "name": "biosentry registed user",
+        "topic": "fingerprint_REGISTED",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "1f655d6c84433314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 260,
+        "wires": [
+            [
+                "0f4e61814589cc73",
+                "09112298ac899582"
+            ]
+        ]
+    },
+    {
+        "id": "09112298ac899582",
+        "type": "function",
+        "z": "3cb90d71da84f143",
+        "name": "biosentry2influx2",
+        "func": "msg.payload.status_ = msg.payload.status_.trim();\nmsg.payload=[\n    {\n    measurement: \"Biodata_fingerRegisted\",\n    fields:{\n        name: msg.payload.name,\n        id: msg.payload.id,\n        status_: msg.payload.status_,\n        \n    },\n    tags:{\n        device_id: msg.payload.device_id,\n        \n    },\n    timestamp: new Date()\n}];\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 260,
+        "wires": [
+            [
+                "983301a61cad1e44"
+            ]
+        ]
+    },
+    {
+        "id": "983301a61cad1e44",
+        "type": "influxdb batch",
+        "z": "3cb90d71da84f143",
+        "influxdb": "313d0c06ddfde3e4",
+        "precision": "",
+        "retentionPolicy": "",
+        "name": "",
+        "database": "Biosentry",
+        "precisionV18FluxV20": "ms",
+        "retentionPolicyV18Flux": "",
+        "org": "ELEVAR TEAM",
+        "bucket": "UniVerde",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "06f699d49a9ac46b",
+        "type": "http in",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "url": "/send-to-appsmith-biosentry",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 180,
+        "y": 340,
+        "wires": [
+            [
+                "6ebbb1420f0af41d"
+            ]
+        ]
+    },
+    {
+        "id": "e3202855a0806c8d",
+        "type": "http response",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6ebbb1420f0af41d",
+        "type": "influxdb in",
+        "z": "3cb90d71da84f143",
+        "influxdb": "313d0c06ddfde3e4",
+        "name": "",
+        "query": "SELECT * FROM loggs_Biodata ORDER BY time DESC \n",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 395,
+        "y": 340,
+        "wires": [
+            [
+                "e3202855a0806c8d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6a5896912660aba7",
+        "type": "http in",
+        "z": "3cb90d71da84f143",
+        "name": "receive_cmd_from app",
+        "url": "/receive-from-appsmith_biosentry",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 220,
+        "y": 440,
+        "wires": [
+            [
+                "b8b053b6a273235b",
+                "348f79817a4dc273",
+                "4ad65f5c1b1e6608"
+            ]
+        ]
+    },
+    {
+        "id": "383350827bc9aae3",
+        "type": "http in",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "url": "/send-to-appsmith-biosentry_registed",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 380,
+        "wires": [
+            [
+                "dc18974aa1eb8024"
+            ]
+        ]
+    },
+    {
+        "id": "59e77143211dfcca",
+        "type": "http response",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "dc18974aa1eb8024",
+        "type": "influxdb in",
+        "z": "3cb90d71da84f143",
+        "influxdb": "313d0c06ddfde3e4",
+        "name": "",
+        "query": "SELECT * FROM Biodata_fingerRegisted ORDER BY time DESC \n",
+        "rawOutput": false,
+        "precision": "",
+        "retentionPolicy": "",
+        "org": "organisation",
+        "x": 490,
+        "y": 380,
+        "wires": [
+            [
+                "59e77143211dfcca",
+                "72dc4734c6cd78c5"
+            ]
+        ]
+    },
+    {
+        "id": "b8b053b6a273235b",
+        "type": "http response",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 430,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "348f79817a4dc273",
+        "type": "mqtt out",
+        "z": "3cb90d71da84f143",
+        "name": "",
+        "topic": "fingerprint_CMD",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "1f655d6c84433314",
+        "x": 460,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "4ad65f5c1b1e6608",
+        "type": "debug",
+        "z": "3cb90d71da84f143",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 440,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "72dc4734c6cd78c5",
+        "type": "debug",
+        "z": "3cb90d71da84f143",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 700,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "afb020ba31c9fed7",
+        "type": "mqtt in",
+        "z": "61c1d686736b2f08",
+        "name": "DHT22",
+        "topic": "topico",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "1f655d6c84433314",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 210,
+        "y": 220,
+        "wires": [
+            [
+                "63719b7ee953177b",
+                "683d9a9658431a81"
+            ]
+        ]
+    },
+    {
+        "id": "63719b7ee953177b",
+        "type": "debug",
+        "z": "61c1d686736b2f08",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6bd4999b7c79f521",
+        "type": "influxdb out",
+        "z": "61c1d686736b2f08",
+        "influxdb": "37b3ae7e2ca19f70",
+        "name": "",
+        "measurement": "UniVerde_data",
+        "precision": "",
+        "retentionPolicy": "",
+        "database": "database",
+        "precisionV18FluxV20": "ns",
+        "retentionPolicyV18Flux": "",
+        "org": "ELEVAR TEAM",
+        "bucket": "UniVerde",
+        "x": 710,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "683d9a9658431a81",
+        "type": "function",
+        "z": "61c1d686736b2f08",
+        "name": "function Example",
+        "func": "// Certifique-se de que msg.payload já é um objeto\nif (typeof msg.payload === \"string\") {\n    msg.payload = JSON.parse(msg.payload);  // Se ainda for uma string, converta para objeto JSON\n}\n\n// Criação do formato esperado para o InfluxDB\nmsg.payload = [\n    {\n        measurement: \"UniVerde_data\",\n        fields: {\n            temperatura: msg.payload.temperatura,\n            humidade: msg.payload.umidade\n        },\n        timestamp: new Date().getTime() // Formato correto de timestamp para o InfluxDB\n    }\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 260,
+        "wires": [
+            [
+                "6bd4999b7c79f521",
+                "6c96bc1cc02f4922"
+            ]
+        ]
+    },
+    {
+        "id": "6c96bc1cc02f4922",
+        "type": "debug",
+        "z": "61c1d686736b2f08",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 620,
+        "y": 200,
+        "wires": []
+    }
+]
