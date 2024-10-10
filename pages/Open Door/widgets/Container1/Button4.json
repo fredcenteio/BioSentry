@@ -26,7 +26,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "onClick": "{{open_door.run().then(() => {\n  showAlert('', 'success');\n});\nLogout.handleLogout();}}",
+  "onClick": "{{open_door.run().then(() => {\n  showAlert('', 'success');\n});}}",
   "parentColumnSpace": 6.53125,
   "parentId": "ikfgqbhyrj",
   "parentRowSpace": 10,
