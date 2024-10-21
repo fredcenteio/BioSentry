@@ -55,7 +55,7 @@
           "isDisabled": false,
           "isVisible": true,
           "label": "Delete",
-          "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');}}",
+          "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');\nJSObject1.myFun2();}}",
           "widgetId": "idir8qdon8"
         },
         "menuItemgkafll8tq3": {

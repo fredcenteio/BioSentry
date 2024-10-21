@@ -26,7 +26,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onClick": "{{Delete.run().then(() => {\n  showAlert('', 'success');\n});}}",
+  "onClick": "{{Delete.run().then(() => {\n  showAlert('', 'success');\n});\nApi1.run()}}",
   "parentColumnSpace": 5.186767578125,
   "parentId": "qe3ii9xwta",
   "parentRowSpace": 10,
