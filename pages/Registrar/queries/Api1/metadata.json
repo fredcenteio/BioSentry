@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "66dc533ebd006624fdcc77b2_0e1d8fac-a00f-4a4e-86bc-1f764bb11380",
-  "id": "Detele finger_Api1",
+  "gitSyncId": "66dc533ebd006624fdcc77b2_8d6d7eaa-21aa-4496-a67b-af350aa69d2c",
+  "id": "Registrar_Api1",
   "pluginId": "google-sheets-plugin",
   "pluginType": "SAAS",
   "unpublishedAction": {
@@ -29,7 +29,7 @@
           "data": ""
         },
         "rowObjects": {
-          "data": "{{{\n\t\"User\": appsmith.store.user.Email,\n\t\"Action\":\"Delete_finger_\"+ Select1.selectedOptionValue + \"->>\" + Input1.text,\n\t\"Data\": Date()\n\n\t}}}"
+          "data": "{{{\n\t\"User\": appsmith.store.user.Email,\n\t\"Action\":\"Register_finger_\"+ Select1.selectedOptionValue + \"->>\" + Input1.text,\n\t\"Data\": Date()\n\n\t}}}"
         },
         "sheetName": {
           "data": "Regist"
@@ -66,7 +66,7 @@
     ],
     "executeOnLoad": false,
     "name": "Api1",
-    "pageId": "Detele finger",
+    "pageId": "Registrar",
     "userSetOnLoad": false
   }
 }

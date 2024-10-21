@@ -32,7 +32,7 @@
   "mobileRightColumn": 40,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onClick": "{{Registrar_finger.run({\n\t\"Cmd\":\"Register_finger\",\n\t\"name\":Input1.text,\n\t\"status\":Input1Copy.text\n\t\n\t});}}",
+  "onClick": "{{Registrar_finger.run({\n  \"Cmd\": \"Register_finger\",\n  \"name\": Input1.text,\n  \"status\": Input1Copy.text\n});\nApi1.run()}}",
   "originalBottomRow": 30,
   "originalTopRow": 26,
   "parentColumnSpace": 5.186767578125,
