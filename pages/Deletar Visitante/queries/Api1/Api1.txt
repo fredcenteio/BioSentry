@@ -1,0 +1,5 @@
+{ 
+  "escolha": 3,
+  "codigoCartao": "{{InputCodigo.text}}"
+
+	}

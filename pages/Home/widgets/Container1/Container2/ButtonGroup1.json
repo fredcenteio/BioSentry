@@ -22,6 +22,9 @@
     },
     {
       "key": "groupButtons.groupButton2.menuItems.menuItemrj0itljy3t.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemakli28p7gi.onClick"
     }
   ],
   "groupButtons": {
@@ -49,27 +52,40 @@
       "isVisible": true,
       "label": "Menu",
       "menuItems": {
-        "menuItemdoqxmgdxd2": {
-          "id": "menuItemdoqxmgdxd2",
+        "menuItemakli28p7gi": {
+          "iconName": "edit",
+          "id": "menuItemakli28p7gi",
           "index": 1,
           "isDisabled": false,
           "isVisible": true,
-          "label": "Delete",
-          "onClick": "{{navigateTo('Detele finger', {}, 'SAME_WINDOW');\nJSObject1.myFun2();}}",
+          "label": "Editar",
+          "onClick": "{{showModal(ModalEditar.name);}}",
+          "widgetId": "3khk5tkf91"
+        },
+        "menuItemdoqxmgdxd2": {
+          "iconName": "delete",
+          "id": "menuItemdoqxmgdxd2",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Deletar",
+          "onClick": "{{JSObject1.myFun2();\nshowModal(ModalDeletar.name);}}",
           "widgetId": "idir8qdon8"
         },
         "menuItemnv3n0ypvbe": {
+          "iconName": "new-person",
           "id": "menuItemnv3n0ypvbe",
           "index": 0,
           "isDisabled": false,
           "isVisible": true,
           "label": "Registrar",
-          "onClick": "{{navigateTo('Registrar', {}, 'SAME_WINDOW');}}",
+          "onClick": "{{showModal(ModalRegistar.name);}}",
           "widgetId": "xndmefa0wx"
         },
         "menuItemrj0itljy3t": {
+          "iconName": "eye-open",
           "id": "menuItemrj0itljy3t",
-          "index": 2,
+          "index": 3,
           "isDisabled": false,
           "isVisible": true,
           "label": "Open Door",
@@ -100,7 +116,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 9,
   "topRow": 0,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,

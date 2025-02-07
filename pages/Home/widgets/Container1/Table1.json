@@ -43,10 +43,10 @@
   "columnWidthMap": {
     "Device_id": 106,
     "id": 60,
-    "logg_info": 88,
+    "logg_info": 117,
     "nome": 129,
     "status": 75,
-    "time": 111
+    "time": 199
   },
   "compactMode": "SHORT",
   "defaultPageSize": 0,

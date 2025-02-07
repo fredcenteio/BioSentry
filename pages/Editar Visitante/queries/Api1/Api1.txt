@@ -1,0 +1,6 @@
+{ 
+  "escolha": 2,
+  "codigoCartao": "{{InputCodigo.text}}",
+	"edificio": "{{InputEdificio.text}}",
+  "status": "{{InputStatus.text}}"
+	}

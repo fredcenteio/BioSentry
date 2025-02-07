@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_9f239275-a304-4455-9868-273e35c7361e",
+  "id": "Deletar Residente_button_des",
+  "unpublishedCollection": {
+    "name": "button_des",
+    "pageId": "Deletar Residente",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

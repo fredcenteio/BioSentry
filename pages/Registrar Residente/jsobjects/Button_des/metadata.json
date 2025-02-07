@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_5da9ac80-3c90-44c0-9f8c-f667091718ae",
+  "id": "Registrar Residente_Button_des",
+  "unpublishedCollection": {
+    "name": "Button_des",
+    "pageId": "Registrar Residente",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

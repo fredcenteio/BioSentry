@@ -1,7 +1,7 @@
 {
   "appIsExample": false,
   "appLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "applicationDetail": {
     "appPositioning": {
@@ -34,11 +34,11 @@
       "isDefault": false
     },
     {
-      "id": "Registrar",
+      "id": "Registrar Residente",
       "isDefault": false
     },
     {
-      "id": "Detele finger",
+      "id": "Deletar Residente",
       "isDefault": false
     },
     {
@@ -48,10 +48,30 @@
     {
       "id": "Open Door",
       "isDefault": false
+    },
+    {
+      "id": "Registar Visitante",
+      "isDefault": false
+    },
+    {
+      "id": "Login Copy",
+      "isDefault": false
+    },
+    {
+      "id": "Editar Residente",
+      "isDefault": false
+    },
+    {
+      "id": "Editar Visitante",
+      "isDefault": false
+    },
+    {
+      "id": "Deletar Visitante",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "unpublishedApplicationDetail": {
     "appPositioning": {
