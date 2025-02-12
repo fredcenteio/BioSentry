@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_b5f5caf9-2dd0-49ed-a2a9-b55786f63d6e",
+  "id": "Registar Visitante_checkInputLength",
+  "unpublishedCollection": {
+    "name": "checkInputLength",
+    "pageId": "Registar Visitante",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

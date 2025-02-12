@@ -1,8 +1,9 @@
 {
-	"escolha": 1,
+	"Cmd": "RegisterRFID_BSRSTI",
   "nome": "{{InputNome.text}}",
   "apelido": "{{InputApelido.text}}",
   "codigoCartao": "{{InputCodigo.text}}",
-	"edificio": "{{InputEdificio.text}}",
+	"edificio": "{{SelectEdificio.selectedOptionLabel}}",
+	"edificioCode": "{{SelectEdificio.selectedOptionValue}}",
   "status": "{{InputStatus.text}}"
 }

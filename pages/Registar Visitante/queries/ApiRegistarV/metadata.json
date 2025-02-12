@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{\n\t\"escolha\": 1,\n  \"nome\": \"{{InputNome.text}}\",\n  \"apelido\": \"{{InputApelido.text}}\",\n  \"codigoCartao\": \"{{InputCodigo.text}}\",\n\t\"edificio\": \"{{InputEdificio.text}}\",\n  \"status\": \"{{InputStatus.text}}\"\n}",
+      "body": "{\n\t\"Cmd\": \"RegisterRFID_BSRSTI\",\n  \"nome\": \"{{InputNome.text}}\",\n  \"apelido\": \"{{InputApelido.text}}\",\n  \"codigoCartao\": \"{{InputCodigo.text}}\",\n\t\"edificio\": \"{{SelectEdificio.selectedOptionLabel}}\",\n\t\"edificioCode\": \"{{SelectEdificio.selectedOptionValue}}\",\n  \"status\": \"{{InputStatus.text}}\"\n}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
