@@ -1,0 +1,90 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 240,
+  "boxShadow": "none",
+  "canEscapeKeyClose": true,
+  "canOutsideClickClose": true,
+  "children": [
+    {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "bottomRow": 240,
+      "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+      "canExtend": true,
+      "detachFromLayout": true,
+      "dynamicBindingPathList": [
+        {
+          "key": "borderRadius"
+        },
+        {
+          "key": "boxShadow"
+        }
+      ],
+      "dynamicHeight": "AUTO_HEIGHT",
+      "flexLayers": [],
+      "isDisabled": false,
+      "isLoading": false,
+      "isVisible": true,
+      "key": "00c4vas6j1",
+      "leftColumn": 0,
+      "maxDynamicHeight": 9000,
+      "minDynamicHeight": 4,
+      "minHeight": 0,
+      "minWidth": 450,
+      "mobileBottomRow": 0,
+      "mobileLeftColumn": 0,
+      "mobileRightColumn": 0,
+      "mobileTopRow": 0,
+      "needsErrorInfo": false,
+      "parentColumnSpace": 1,
+      "parentId": "fvg8706g5x",
+      "parentRowSpace": 1,
+      "renderMode": "CANVAS",
+      "responsiveBehavior": "fill",
+      "rightColumn": 0,
+      "shouldScrollContents": false,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "mqwsdxkb4y",
+      "widgetName": "Canvas8"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClose"
+    }
+  ],
+  "height": 240,
+  "isCanvas": true,
+  "isLoading": false,
+  "key": "r1nc87mvge",
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 24,
+  "mobileBottomRow": 0,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 0,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClose": "{{closeModal(ModalHistR.name);}}",
+  "parentColumnSpace": 1,
+  "parentId": "0",
+  "parentRowSpace": 1,
+  "renderMode": "CANVAS",
+  "rightColumn": 0,
+  "shouldScrollContents": true,
+  "topRow": 0,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "fvg8706g5x",
+  "widgetName": "ModalHistR",
+  "width": 456
+}

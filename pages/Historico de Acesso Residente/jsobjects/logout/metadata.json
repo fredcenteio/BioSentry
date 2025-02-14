@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_07fde208-a0d0-4f5c-8a9a-b44e37dfc8cc",
+  "id": "Historico de Acesso Residente_logout",
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "Historico de Acesso Residente",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

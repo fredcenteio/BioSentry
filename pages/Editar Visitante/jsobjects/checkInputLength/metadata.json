@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_a76c42e1-1398-4a98-9cfb-ea5a3cb0a75a",
+  "id": "Editar Visitante_checkInputLength",
+  "unpublishedCollection": {
+    "name": "checkInputLength",
+    "pageId": "Editar Visitante",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": "[]"
+      },
+      {
+        "name": "myVar2",
+        "value": "{}"
+      }
+    ]
+  }
+}

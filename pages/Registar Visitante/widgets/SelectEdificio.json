@@ -19,7 +19,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -40,6 +44,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 14,
   "needsErrorInfo": false,
+  "onOptionChange": "{{checkInputLength.checkInputLength();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 22,
@@ -47,7 +52,7 @@
   "parentColumnSpace": 15.21875,
   "parentId": "0",
   "parentRowSpace": 10,
-  "placeholderText": "Seleciona o edifício",
+  "placeholderText": "Selecione o edifício",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 43,

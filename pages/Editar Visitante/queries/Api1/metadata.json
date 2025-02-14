@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{ \n  \"escolha\": 2,\n  \"codigoCartao\": \"{{InputCodigo.text}}\",\n\t\"edificio\": \"{{InputEdificio.text}}\",\n  \"status\": \"{{InputStatus.text}}\"\n\t}",
+      "body": "{ \n  \"Cmd\": \"EditarRFID_BSRSTI\",\n  \"codigoCartao\": \"{{InputCodigo.text}}\",\n\t\"edificio\": \"{{SelectEdificio.selectedOptionLabel}}\",\n\t\"edificioCode\": \"{{SelectEdificio.selectedOptionValue}}\",\n  \"status\": \"{{InputStatus.text}}\"\n\t}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

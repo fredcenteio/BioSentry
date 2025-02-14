@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{ \n  \"escolha\": 3,\n  \"codigoCartao\": \"{{InputCodigo.text}}\"\n\n\t}",
+      "body": "{ \n  \"Cmd\": \"DeletarRFID_BSRSTI\",\n  \"codigoCartao\": \"{{InputCodigo.text}}\"\n\n\t}",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {

@@ -1,11 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
-  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 32,
+  "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultOptionValue": "E15",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,42 +14,51 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
+  "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "ljk9fzft20",
-  "label": "Edifício",
+  "key": "c4r73nxyrx",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "",
+  "labelText": "Edifício",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
+  "mobileBottomRow": 24,
   "mobileLeftColumn": 22,
   "mobileRightColumn": 42,
-  "mobileTopRow": 22,
+  "mobileTopRow": 17,
   "needsErrorInfo": false,
-  "originalBottomRow": 31,
-  "originalTopRow": 24,
+  "onOptionChange": "{{checkInputLength.checkInputLength();}}",
+  "optionLabel": "name",
+  "optionValue": "code",
   "parentColumnSpace": 15.21875,
   "parentId": "0",
   "parentRowSpace": 10,
+  "placeholderText": "Selecione o edifício",
   "renderMode": "CANVAS",
-  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 42,
-  "showStepArrows": false,
-  "topRow": 25,
-  "type": "INPUT_WIDGET_V2",
-  "version": 2,
-  "widgetId": "4aumji59ry",
-  "widgetName": "InputEdificio"
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"E17\",\n    \"code\": \"BSE17T\"\n  },\n  {\n    \"name\": \"E16\",\n    \"code\": \"BSE16T\"\n  },\n  {\n    \"name\": \"E15\",\n    \"code\": \"BSE15T\"\n  }\n]",
+  "topRow": 17,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "7o3dpevwly",
+  "widgetName": "SelectEdificio"
 }

@@ -2,12 +2,21 @@
   "animateLoading": true,
   "borderRadius": "1.5rem",
   "bottomRow": 55,
+  "bottomRowBeforeCollapse": 55,
   "boxShadow": "none",
   "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
-  "dynamicPropertyPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -16,7 +25,7 @@
   "iconAlign": "left",
   "iconName": "send-message",
   "isDefaultClickDisabled": true,
-  "isDisabled": true,
+  "isDisabled": "{{ \n  !InputNome.text || \n  !InputApelido.text || \n  !InputCodigo.text || \n  !InputStatus.text || \n  !SelectEdificio.selectedOptionValue \n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "p0jl6x82hh",
@@ -27,7 +36,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 53,
   "needsErrorInfo": false,
-  "onClick": "{{showAlert('Operação bem sucedida!', 'success');\nApiRegistarV.run()}}",
+  "onClick": "{{showAlert('Operação bem sucedida!', 'success');\nApiRegistarV.run();}}",
   "originalBottomRow": 55,
   "originalTopRow": 51,
   "parentColumnSpace": 15.21875,
@@ -41,6 +50,7 @@
   "rightColumn": 41,
   "text": "Registar",
   "topRow": 51,
+  "topRowBeforeCollapse": 51,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "fydzd77gtu",

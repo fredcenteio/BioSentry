@@ -1,6 +1,7 @@
 { 
-  "escolha": 2,
+  "Cmd": "EditarRFID_BSRSTI",
   "codigoCartao": "{{InputCodigo.text}}",
-	"edificio": "{{InputEdificio.text}}",
+	"edificio": "{{SelectEdificio.selectedOptionLabel}}",
+	"edificioCode": "{{SelectEdificio.selectedOptionValue}}",
   "status": "{{InputStatus.text}}"
 	}

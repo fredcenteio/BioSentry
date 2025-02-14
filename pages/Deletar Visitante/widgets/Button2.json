@@ -2,11 +2,21 @@
   "animateLoading": true,
   "borderRadius": "1.5rem",
   "bottomRow": 34,
+  "bottomRowBeforeCollapse": 34,
   "boxShadow": "none",
   "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
-  "dynamicBindingPathList": [],
+  "dynamicBindingPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -15,7 +25,7 @@
   "iconAlign": "left",
   "iconName": "delete",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{ \n  !InputCodigo.text\n   \n}}",
   "isLoading": false,
   "isVisible": true,
   "key": "hsljgz4m5f",
@@ -26,7 +36,9 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "onClick": "{{Api1.run()}}",
+  "onClick": "{{showModal(ModalAviso.name);}}",
+  "originalBottomRow": 34,
+  "originalTopRow": 30,
   "parentColumnSpace": 15.21875,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -38,6 +50,7 @@
   "rightColumn": 36,
   "text": "Deletar",
   "topRow": 30,
+  "topRowBeforeCollapse": 30,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "g5o4qqvv17",

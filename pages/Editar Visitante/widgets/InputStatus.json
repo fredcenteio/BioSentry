@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 39,
+  "bottomRow": 40,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -15,9 +15,13 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
@@ -38,8 +42,9 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 29,
   "needsErrorInfo": false,
-  "originalBottomRow": 38,
-  "originalTopRow": 31,
+  "onTextChanged": "{{checkInputLength.checkInputLength();}}",
+  "originalBottomRow": 39,
+  "originalTopRow": 32,
   "parentColumnSpace": 15.21875,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -49,7 +54,7 @@
   "rightColumn": 42,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 32,
+  "topRow": 33,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "n65657uuiz",

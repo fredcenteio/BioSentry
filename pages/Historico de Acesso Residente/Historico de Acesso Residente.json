@@ -1,0 +1,33 @@
+{
+  "gitSyncId": "66dc533ebd006624fdcc77b2_7f1bcb05-8f4d-42f2-8143-e00f07279fc6",
+  "unpublishedPage": {
+    "customSlug": "",
+    "isHidden": false,
+    "layouts": [
+      {
+        "dsl": {
+          "backgroundColor": "none",
+          "bottomRow": 690,
+          "canExtend": true,
+          "containerStyle": "none",
+          "detachFromLayout": true,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "minHeight": 730,
+          "parentColumnSpace": 1,
+          "parentRowSpace": 1,
+          "rightColumn": 1224,
+          "snapColumns": 64,
+          "snapRows": 71,
+          "topRow": 0,
+          "type": "CANVAS_WIDGET",
+          "version": 91,
+          "widgetId": "0",
+          "widgetName": "MainContainer"
+        }
+      }
+    ],
+    "name": "Historico de Acesso Residente",
+    "slug": "historico-de-acesso-residente"
+  }
+}

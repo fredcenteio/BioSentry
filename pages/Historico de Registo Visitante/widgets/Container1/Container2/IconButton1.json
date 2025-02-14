@@ -1,0 +1,40 @@
+{
+  "animateLoading": true,
+  "borderRadius": "1.5rem",
+  "bottomRow": 4,
+  "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  "buttonColor": "#7f1d1d",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "log-out",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "71ifq8og48",
+  "leftColumn": 60,
+  "minWidth": 50,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 54,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "onClick": "{{logout.handleLogout();}}",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentColumnSpace": 5.4619140625,
+  "parentId": "h37qtn5a2m",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "topRow": 0,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "ai3o9b549d",
+  "widgetName": "IconButton1"
+}

@@ -15,9 +15,13 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
@@ -38,6 +42,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
+  "onTextChanged": "{{checkInputLength.checkInputLength();}}",
   "parentColumnSpace": 15.21875,
   "parentId": "0",
   "parentRowSpace": 10,

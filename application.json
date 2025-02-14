@@ -68,6 +68,22 @@
     {
       "id": "Deletar Visitante",
       "isDefault": false
+    },
+    {
+      "id": "Historico de Registo Residente",
+      "isDefault": false
+    },
+    {
+      "id": "Historico de Registo Visitante",
+      "isDefault": false
+    },
+    {
+      "id": "Historico de Acesso Residente",
+      "isDefault": false
+    },
+    {
+      "id": "Historico de Acesso Visitante",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

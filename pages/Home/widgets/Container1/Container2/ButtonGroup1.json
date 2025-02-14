@@ -25,6 +25,12 @@
     },
     {
       "key": "groupButtons.groupButton2.menuItems.menuItemakli28p7gi.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemzukv2ynsli.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemji9x08ymgh.onClick"
     }
   ],
   "groupButtons": {
@@ -72,6 +78,16 @@
           "onClick": "{{JSObject1.myFun2();\nshowModal(ModalDeletar.name);}}",
           "widgetId": "idir8qdon8"
         },
+        "menuItemji9x08ymgh": {
+          "iconName": "database",
+          "id": "menuItemji9x08ymgh",
+          "index": 4,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Históricos de Acessos",
+          "onClick": "{{showModal(ModalHistA.name);}}",
+          "widgetId": "fir6rwjn5r"
+        },
         "menuItemnv3n0ypvbe": {
           "iconName": "new-person",
           "id": "menuItemnv3n0ypvbe",
@@ -85,12 +101,22 @@
         "menuItemrj0itljy3t": {
           "iconName": "eye-open",
           "id": "menuItemrj0itljy3t",
-          "index": 3,
+          "index": 5,
           "isDisabled": false,
           "isVisible": true,
           "label": "Open Door",
           "onClick": "{{navigateTo('Open Door', {}, 'SAME_WINDOW');}}",
           "widgetId": "tq5wnq0ped"
+        },
+        "menuItemzukv2ynsli": {
+          "iconName": "archive",
+          "id": "menuItemzukv2ynsli",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "Históricos de Registos",
+          "onClick": "{{showModal(ModalHistR.name);}}",
+          "widgetId": "j8e9ju5wck"
         }
       },
       "placement": "CENTER",

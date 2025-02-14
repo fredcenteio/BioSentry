@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "buttonColor": "#15803d",
+  "buttonStyle": "PRIMARY_BUTTON",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "uzr2g0fkc7",
+  "leftColumn": 34,
+  "minWidth": 120,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 47,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 18,
+  "needsErrorInfo": false,
+  "onClick": "{{Api1.run().then(() => {\n  showAlert('Cartão deletado com sucesso!', 'success');\n});\ncloseModal('');}}",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentId": "ydv6rqcfw4",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 50,
+  "text": "Sim",
+  "topRow": 12,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "9eanoz7vmw",
+  "widgetName": "Button4"
+}

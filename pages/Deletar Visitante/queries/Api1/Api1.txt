@@ -1,5 +1,5 @@
 { 
-  "escolha": 3,
+  "Cmd": "DeletarRFID_BSRSTI",
   "codigoCartao": "{{InputCodigo.text}}"
 
 	}
