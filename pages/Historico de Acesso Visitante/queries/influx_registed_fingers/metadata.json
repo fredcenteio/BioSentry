@@ -40,9 +40,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "influx_registed_fingers",
     "pageId": "Historico de Acesso Visitante",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
     "fullyQualifiedName": "reload.myFun2",
     "name": "myFun2",
     "pageId": "Registrar Residente",
+    "runBehaviour": "ON_PAGE_LOAD",
     "userSetOnLoad": false
   }
 }

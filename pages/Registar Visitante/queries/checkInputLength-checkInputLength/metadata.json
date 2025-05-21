@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "checkInputLength.checkInputLength",
     "name": "checkInputLength",
     "pageId": "Registar Visitante",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

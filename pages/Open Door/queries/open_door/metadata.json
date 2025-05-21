@@ -44,9 +44,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "open_door",
     "pageId": "Open Door",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JSObject1.myFun2",
     "name": "myFun2",
     "pageId": "Deletar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

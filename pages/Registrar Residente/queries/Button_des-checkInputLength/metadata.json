@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Button_des.checkInputLength",
     "name": "checkInputLength",
     "pageId": "Registrar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

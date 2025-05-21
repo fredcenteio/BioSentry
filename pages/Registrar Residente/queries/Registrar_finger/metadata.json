@@ -44,9 +44,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Registrar_finger",
     "pageId": "Registrar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

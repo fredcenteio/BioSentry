@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "log.handleLogin",
     "name": "handleLogin",
     "pageId": "Login Copy",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

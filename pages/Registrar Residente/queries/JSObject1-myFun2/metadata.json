@@ -23,10 +23,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "JSObject1.myFun2",
     "name": "myFun2",
     "pageId": "Registrar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

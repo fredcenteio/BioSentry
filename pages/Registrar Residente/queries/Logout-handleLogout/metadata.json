@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Logout.handleLogout",
     "name": "handleLogout",
     "pageId": "Registrar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -40,9 +40,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "influx",
     "pageId": "Historico de Registo Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

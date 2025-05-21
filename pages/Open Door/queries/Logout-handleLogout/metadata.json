@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "Logout.handleLogout",
     "name": "handleLogout",
     "pageId": "Open Door",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

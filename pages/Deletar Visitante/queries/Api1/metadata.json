@@ -44,9 +44,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Api1",
     "pageId": "Deletar Visitante",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

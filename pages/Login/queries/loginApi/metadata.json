@@ -49,9 +49,9 @@
       "pluginId": "restapi-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": false,
     "name": "loginApi",
     "pageId": "Login",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

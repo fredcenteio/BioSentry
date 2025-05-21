@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "logout.startLogoutTimer",
     "name": "startLogoutTimer",
     "pageId": "Historico de Acesso Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

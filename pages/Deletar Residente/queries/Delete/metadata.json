@@ -44,9 +44,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "Delete",
     "pageId": "Deletar Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

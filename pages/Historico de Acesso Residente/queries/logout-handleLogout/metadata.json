@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "fullyQualifiedName": "logout.handleLogout",
     "name": "handleLogout",
     "pageId": "Historico de Acesso Residente",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

@@ -44,9 +44,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
     "name": "ApiRegistarV",
     "pageId": "Registar Visitante",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
